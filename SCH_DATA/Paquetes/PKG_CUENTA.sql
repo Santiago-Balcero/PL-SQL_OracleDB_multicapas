@@ -1,0 +1,9 @@
+-- Crea paquete CUENTA capa acceso a datos.
+
+CREATE OR REPLACE PACKAGE TECH1.PKG_CUENTA IS
+
+	subtype tyrcCUENTA IS TECH1.CUENTA%rowtype;
+
+	PROCEDURE prCONSULTAR_SALDO (idcuenta IN NUMBER, saldo OUT NUMBER);
+	
+END PKG_CUENTA;
